@@ -1,0 +1,6 @@
+version: '3'
+
+services:
+  slims-dapodik-syncronized:
+    image: mamulazmi/slims-dapodik-synchronizer:latest
+    restart: unless-stopped

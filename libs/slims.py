@@ -78,4 +78,7 @@ class Slims:
             memberTypeId,
         ))
         
+        self.commit()
+        
+    def commit(self):
         self.connection.commit()

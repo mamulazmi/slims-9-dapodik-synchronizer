@@ -1,2 +1,6 @@
+python-dotenv
 requests
+dataclasses-json
 mysql-connector-python
+schedule
+tabulate
