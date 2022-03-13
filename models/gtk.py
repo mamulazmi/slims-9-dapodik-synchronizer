@@ -32,7 +32,7 @@ class Gtk:
         return {
             'member_id': self.nik,
             'member_name': self.nama.title(),
-            'gender': (0 if self.jenis_kelamin == "p" else 1),
+            'gender': (0 if self.jenis_kelamin == "P" else 1),
             'member_type_id': os.getenv('SLIMS_MEMBERSHIP_TEACHER_ID'),
             'member_email': '',
             'member_address': '',

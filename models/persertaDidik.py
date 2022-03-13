@@ -41,7 +41,7 @@ class PesertaDidik:
         return {
             'member_id': self.nipd,
             'member_name': self.nama.title(),
-            'gender': (0 if self.jenis_kelamin == "p" else 1),
+            'gender': (0 if self.jenis_kelamin == "P" else 1),
             'member_type_id': os.getenv('SLIMS_MEMBERSHIP_STUDENT_ID'),
             'member_email': self.email,
             'member_address': self.alamat_jalan,
