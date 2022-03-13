@@ -72,7 +72,7 @@ class Slims:
         ))
     
     def deactivate(self, memberTypeId):
-        sql = "UPDATE member SET is_pending = 1 WHERE member_type_id = %s"
+        sql = "UPDATE member SET is_pending = 1, expire_date = '2000-05-02' WHERE member_type_id = %s"
         
         self.cursor.execute(sql, (
             memberTypeId,
