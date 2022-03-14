@@ -57,7 +57,7 @@ class Slims:
         
         
     def update(self, member):
-        sql = "UPDATE member SET member_name = %s, is_pending = 0, gender = %s, member_email = %s, member_address = %s, inst_name = %s, member_phone = %s, member_fax = %s WHERE member_id = %s"
+        sql = "UPDATE member SET member_name = %s, is_pending = 0, gender = %s, member_email = %s, member_address = %s, inst_name = %s, member_phone = %s, member_fax = %s, expire_date = %s WHERE member_id = %s"
         
         self.cursor.execute(sql, (
             member['member_name'],
@@ -67,8 +67,8 @@ class Slims:
             member['inst_name'],
             member['member_phone'],
             member['member_fax'],
+            member['expire_date'],
             member['member_id'],
-            
         ))
     
     def deactivate(self, memberTypeId):
